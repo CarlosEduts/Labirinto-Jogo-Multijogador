@@ -2,6 +2,7 @@ const time = document.querySelectorAll(".time");
 const victoryPage = document.querySelector(".victory");
 const container = document.querySelector(".container");
 const game = document.querySelector(".game");
+const solution = document.querySelector(".solution");
 const maps = document.querySelector(".maps");
 const redirect = document.querySelector(".redirect");
 const navBar = document.querySelector(".nav-bar");
@@ -171,6 +172,8 @@ images.forEach((img) => {
       }
     }
 
+    // Link para a solução do Labirinto no GitHub
+    solution.href = `https://github.com/CarlosEduts/Labirinto-Jogo/blob/main/Game-Images/Solved-Maps/map-${indice}.png`;
     image = images[indice];
     init();
     timer();
