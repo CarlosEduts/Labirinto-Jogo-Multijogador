@@ -1,0 +1,154 @@
+/* Formatting */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+:root {
+  --light: #f5f5f5;
+  --dark: #1c1c1c;
+  --blue: #049dd9;
+  --light-blue: #05c7f2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-style: normal;
+  font-family: "Inter", sans-serif;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: var(--dark);
+  color: var(--light);
+}
+
+/* .container Style */
+.user-page,
+.game,
+.victory {
+  width: 100%;
+  height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1.5rem 2rem;
+}
+
+.title {
+  padding-bottom: 1rem;
+}
+
+h1 {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.title > p {
+  padding-top: 0.2rem;
+  font-size: 0.85rem;
+  color: #ffffff7c;
+  text-align: center;
+}
+
+/* .game Style */
+.game {
+  height: calc(100dvh - 80px);
+  padding: 1rem;
+}
+
+canvas {
+  border: 2px solid var(--light);
+  border-radius: 0.5rem;
+  width: 100%;
+  max-width: 700px;
+  max-height: 88%;
+}
+
+/* .Victory Styles */
+.user-page,
+.victory {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  position: absolute;
+  width: 100%;
+  height: 100dvh;
+}
+
+.winnaar {
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-align: center;
+  color: var(--blue);
+}
+
+.redirect {
+  font-weight: 400;
+  text-align: center;
+  color: var(--light);
+}
+
+/* .user-page Style */
+.user-page {
+  display: flex;
+}
+
+.user-page > p {
+  font-size: 0.8rem;
+}
+
+.user-page > input {
+  width: 100%;
+  max-width: 200px;
+  height: 30px;
+  margin-bottom: 0.5rem;
+  border-radius: 0.2rem;
+  padding: 0.5rem;
+}
+
+.username-button {
+  width: 100%;
+  max-width: 200px;
+  height: 25px;
+  border-radius: 8px;
+  border: none;
+  margin: 0 1rem;
+  font-size: 1rem;
+  border-radius: 0.2rem;
+}
+
+/* .nav-bar Style */
+.nav-bar {
+  display: none;
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  border-top: 1px solid #899ba524;
+  background-color: #39393910;
+  backdrop-filter: blur(3px);
+  bottom: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  width: 70px;
+  height: 50px;
+  border-radius: 8px;
+  border: none;
+  margin: 0 1rem;
+  font-size: 1.5rem;
+  background-color: var(--light-blue);
+  color: var(--light);
+  border-color: var(--dark);
+  border-bottom: 3px solid var(--blue);
+  border-right: 3px solid var(--blue);
+}
+
+button:hover {
+  border: none;
+}

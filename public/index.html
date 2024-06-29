@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jogo de Labirinto Multiplaper: Jogar</title>
+    <link
+      rel="shortcut icon"
+      href="./Game-Images/Icons/icon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./Style/index.css" />
+
+    <!-- Link: Tabler Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"
+    />
+
+    <!-- Link: Socket.io -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <img class="map" style="display: none" />
+
+    <div class="victory">
+      <h1>A partida chegou ao fim!</h1>
+      <p class="winnaar"></p>
+      <p class="redirect"></p>
+    </div>
+
+    <div class="user-page">
+      <div class="title">
+        <h1>Iniciar</h1>
+        <p>Insira um Nome de Usuário:</p>
+      </div>
+      <input type="text" placeholder="Username" id="username-input" />
+      <button class="username-button">Jogar</button>
+    </div>
+
+    <div class="game">
+      <div class="title">
+        <h1>Partida</h1>
+        <p class="time"></p>
+      </div>
+      <canvas id="canvas"></canvas>
+    </div>
+
+    <div class="nav-bar">
+      <button onclick="renderPlayer('Left')">
+        <i class="ti ti-arrow-big-left"></i>
+      </button>
+      <button onclick="renderPlayer('Right')">
+        <i class="ti ti-arrow-big-right"></i>
+      </button>
+      <button onclick="renderPlayer('Up')">
+        <i class="ti ti-arrow-big-up"></i>
+      </button>
+      <button onclick="renderPlayer('Down')">
+        <i class="ti ti-arrow-big-down"></i>
+      </button>
+    </div>
+    <script src="./Script/index.js" defer></script>
+  </body>
+</html>
