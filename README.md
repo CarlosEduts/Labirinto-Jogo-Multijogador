@@ -2,11 +2,11 @@
 
 ## Introdução
 
-Bem-vindo ao Jogo de Labirinto Multiplayer, um desafio de labirinto implementado com JavaScript, HTML, CSS, nodeJs, express e socket.io.
+Bem-vindo ao Jogo de Labirinto(Versão Multiplayer), um desafio de labirinto implementado com JavaScript, HTML, CSS, nodeJs, express e socket.io.
 
 ## Instruções de Jogo 🕹️
 
-1. Abra o [Jogo](https://carloseduts.github.io/Labirinto-Jogo-Multijogador/) em seu navegador da web.
+1. Abra o [Jogo](https://labirinto-jogo-multijogador.onrender.com) em seu navegador da web.
 2. Use as teclas de seta do teclado para mover o personagem através do labirinto.
 3. O objetivo é encontrar a saída do labirinto antes dos outros jogadores!
 
@@ -35,7 +35,7 @@ Este projeto está licenciado sob a Licença MIT. Consulte o arquivo `LICENSE` p
 
 ## Links 🌐
 
-Acesse o Jogo [Aqui!](https://carloseduts.github.io/Labirinto-Jogo-Multijogador/).
+Acesse o Jogo [Aqui!](https://labirinto-jogo-multijogador.onrender.com).
 <br />
 Jogo Solo: [Labirinto-Jogo](https://carloseduts.github.io/Labirinto-Jogo-/)
 <br />
