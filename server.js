@@ -8,7 +8,7 @@ const io = socketIO(server);
 const PORT = process.env.PORT || 3000;
 
 // Número de Imagens da pasta Maps
-var imageId = imgRandom(2);
+var imageId = imgRandom(10);
 
 // Serve os arquivos estáticos (como o HTML do jogo)
 app.use(express.static("public"));
